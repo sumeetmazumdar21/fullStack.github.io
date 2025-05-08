@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Using checkbox -->
+    <h1>Form using other input types</h1>
+    <form>
+        <h3> 1) Sports Played in School</h3>
+        <label for="cricket">cricket</label>
+        <input type="checkbox" name="cricket" id="cricket">
+        <label for="football">football</label>
+        <input type="checkbox" name="football" id="football">
+        <label for="badminton">badminton</label>
+        <input type="checkbox" name="badminton" id="badminton">
+        <label for="chess">chess</label>
+        <input type="checkbox" name="chess" id="chess">
+        <label for="tennis">tennis</label>
+        <input type="checkbox" name="tennis" id="tennis">
+    </form>
+    <hr>
+
+    <!-- using radio button -->
+     <!-- Note: The radio group must share the same name (the value of the name attribute) to be treated as a group.   -->
+    <h3> 2) Gender</h3>
+    <form>
+       <label for="male">Male</label>
+       <input type="radio" name="gender" id="male">
+       <label for="female">Female</label>
+       <input type="radio" name="gender" id="female">
+       <label for="others">Others</label>
+       <input type="radio" name="gender" id="others">
+    </form>
+    <hr>
+
+    <h3> 3) Search Input</h3>
+    <form>
+        <label for="site-search">Search the site: </label>
+        <input type="search" name="q" id="site-search">
+        <button>Search</button>
+    </form>
+    <hr>
+
+    <h3> 4) Date Input</h3>
+    <form>
+        <label for="start">Start date:</label>
+
+        <input
+        type="date"
+        id="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01"
+        max="2018-12-31" />
+    </form>
+    <hr>
+
+    <h3> Documentation: HTML Input Elements: </h3>
+    
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input">
+        <label for="documentation">Click Here</label>
+    </a>
+</body>
+</html>
