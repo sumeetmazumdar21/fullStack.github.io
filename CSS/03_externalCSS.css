@@ -1,0 +1,28 @@
+body{
+    margin: 20px;
+    padding:30px;
+    background-color: darkgreen;
+}
+
+.header{
+    color: beige;
+    font-style: italic;
+}
+
+.sub-header{
+    color: burlywood;
+    font-weight: bolder;
+    padding-left: 100px;
+}
+
+.about{
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 90px;
+    font-style: italic;
+}
+
+.page-content{
+    color: yellow;
+    font-stretch: expanded;
+}
