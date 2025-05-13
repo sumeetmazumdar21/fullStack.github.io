@@ -1,0 +1,158 @@
+body {
+  background-color: #1a1a1d;
+  color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  margin-bottom: 40px;
+}
+
+/* Navbar Variation 1: Horizontal with underline effect */
+
+.nav1 {
+  background-color: #e1e1e1;
+  padding: 10px;
+}
+
+.nav1 ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav1 li {
+  display: inline;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: #1a1a1d;
+  /* background-color: #ffafaf; */
+  padding: 5px 12px;
+  position: relative;
+}
+
+.nav1 .login-btn {
+  background-color: rgb(63, 63, 255);
+  color: aliceblue;
+  font-size: bolder;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav1 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(73, 73, 221);
+  transform: scaleX(0);
+  transition: transform 0.13s ease-in-out;
+}
+
+.nav1 a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Navbar Variation 2: Vertical with hover effect */
+.nav2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  padding: 20px;
+  background-color: #055805;
+}
+
+.nav2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav2 li {
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color:aliceblue;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.nav2 a:hover{
+    background-color: #1ee52b;
+}
+
+.nav2 .login-btn{
+    background-color: #1ee52b;
+    color: aliceblue;
+    border: none;
+    width: 100%;
+    padding:10px;
+    cursor: pointer;
+}
+
+.nav2 .login-btn:hover {
+    background-color: #6cf332;
+    border: 1px solid #7ee714;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navbar Variation 3: */
+.nav3{
+    background-color: #3f90eb;
+    padding: 10px;
+}
+
+.nav3 ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav3 a{
+    text-decoration: none;
+    color: #e1e1e1;
+    padding: 10px;
+    display: block;
+}
+
+.nav3 .dropdown-content{
+    display: none;
+}
+
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #3f90eb;
+    min-width: 120px;
+    transform: translate(18px, 12px);
+    transition: transform 2s ease-in;
+}
+
+.nav3 .login-btn{
+    background-color: #094b89;
+    color: aliceblue;
+    border: none;
+    width: 100%;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.nav3 .login-btn:hover{
+    background-color: #0465b0;
+    font-weight: bold;
+}
