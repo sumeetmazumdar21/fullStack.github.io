@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+}
+
+.container{
+background: linear-gradient(65deg, rgb(50, 9, 66), rgb(101, 19, 216));
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 3px;
+    max-width: 40vw;
+}
+
+#banner{
+    height: 50vh;
+    width: 30vw;
+    padding-bottom: 10px;
+}
+
+#logo{
+    width: 55px;
+    object-fit: contain;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+h1{
+    color: #333;
+}
+
+p{
+    color: rgb(74, 82, 66);
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"] {
+    padding: 0.4rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    padding: 0.4rem;
+    background-color: #561e67;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+    box-shadow: 0 4px 6px rgba(82, 9, 78, 0.9) ;
+}
+
+button[type="submit"]:hover {
+    background-color: #7e169e;
+}
