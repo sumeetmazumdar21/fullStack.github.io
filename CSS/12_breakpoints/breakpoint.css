@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-breakpoint{
+    background-color: blueviolet;
+    color: #eee;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Breakpoints using media query */
+
+@media (max-width: 640px) {
+body{
+    align-items: flex-end;
+}
+.page-breakpoint{
+    background-color: #0df;
+    color: #333;
+}
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    body{
+        align-items: flex-start;
+    }
+    .page-breakpoint{
+        background-color: #f0d;
+        color: #333;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body{
+        justify-content: flex-end;
+    }
+    .page-breakpoint{
+        background-color: rgb(0, 255, 38);
+        color: #333;
+        height: 500px;
+    }
+}
+
