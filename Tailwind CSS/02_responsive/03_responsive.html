@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen">
+    <!-- divide the screen into 12 equal sections for the parent div for "sm" and above screen size, and 3 columns for below "sm" -->
+    <div class="grid sm:grid-cols-12 grid-cols-3  m-4 gap-3">
+        <!-- this div takes 2 out of 12 sections of the parent on "sm" and above screens and 1/3 on screens below "sm"-->
+       <div class="h-20 bg-red-700 rounded-lg shadow sm:col-span-2 col-span-1"></div>
+
+       <!-- this div takes 7 out of 12 sections of the parent on "sm" and above screens and 2/3 on screens below "sm"-->
+       <div class="h-20 bg-orange-400 rounded-lg shadow sm:col-span-7 col-span-2"></div>
+
+       <!-- this div takes 3 out of 12 sections of the parent on "sm" and above screens and 1/3 on screens below "sm" and moves to the next line as 3 columns already occupied by div1 and div2-->
+       <div class="h-20 bg-teal-400 rounded-lg shadow sm:col-span-3 "></div>
+    </div>
+    
+</body>
+</html>
