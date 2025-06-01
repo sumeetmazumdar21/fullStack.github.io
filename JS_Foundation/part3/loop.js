@@ -14,12 +14,12 @@
     2. Write a 'while' loop that counts down from 5 to 1 and stores the numbers in an array named 'countdown'.
 */
 
-    let num = 5;
+    let num1 = 5;
     let countdown = new Array();
 
-    while(num >= 1){
-        countdown.push(num);
-        num--;
+    while(num1 >= 1){
+        countdown.push(num1);
+        num1--;
     }
 
     console.log(countdown); // [ 5, 4, 3, 2, 1 ]
@@ -47,13 +47,13 @@
     4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a variable named `total`.
 */
 
-    let num = 1;
+    let num2 = 1;
     let total = 0;
 
     do {
-        total += num;
-        num++;
-    } while (num < 4);
+        total += num2;
+        num2++;
+    } while (num2 < 4);
 
     console.log(total);
     
