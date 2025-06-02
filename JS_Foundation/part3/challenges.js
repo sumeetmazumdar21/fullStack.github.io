@@ -48,9 +48,9 @@
     4. Use a `for-of` loop to iterate through the array '[1, 2, 3, 4, 5]' and skip on reaching `4`. Store the numbers except `4` in another array `skipFour`.
 */
 
-        let numbers = [1, 2, 3, 4, 5, 6, 7, 4, 8, 9, 4, 15];
+        let nums = [1, 2, 3, 4, 5, 6, 7, 4, 8, 9, 4, 15];
         let skipFour = [];
-        for (let num of numbers) {
+        for (let num of nums) {
         if (num === 4) {
             continue;
         }
@@ -142,10 +142,10 @@
     8. Write a `forEach` loop that iterates through the array `["Berlin", "Sydney", "Tokyo", "Istanbul", "London"]` and skips "Istanbul", storing the rest cities in a new array named `globalCitites`.
 */
 
-            let cities = ["Berlin", "Sydney", "Tokyo", "Istanbul", "London"];
+            let citiesList = ["Berlin", "Sydney", "Tokyo", "Istanbul", "London"];
             let globalCitites = [];
 
-            cities.forEach((city) => {
+            citiesList.forEach((city) => {
             if (city === "Istanbul") {
                 return;
             }
